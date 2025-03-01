@@ -1,7 +1,7 @@
 
 const modal = document.getElementById("myModal");
 const openModalBtn = document.getElementById("openModalBtn");
-const closeBtn = document.getElementsByClassName("close")[0];
+const closeBtn = document.getElementsByClassName("close")[1];
 
 
 openModalBtn.onclick = function() {
