@@ -1,0 +1,33 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; 
+    color: #333; 
+    padding: 0;
+    text-align: center;
+}
+
+
+h1 {
+    color: #b9b76b; 
+    font-size: 3rem;}
+
+
+p {
+    font-size: 1.2rem;
+    color: #7f8c8d; 
+}
+
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+ul li {
+    background-color: #24606f; 
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}

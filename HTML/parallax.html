@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Effect</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        
+        .parallax {
+            position: relative;
+            background-image: url('https://ultimatemotorcycling.com/wp-content/uploads/2022/09/bmw-s-1000-rr-first-look-superbike-sport-motorcycle-20.jpg'); /* Placeholder image */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh; 
+            z-index: -1; 
+        }
+
+        
+        .content {
+            background-color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .content h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        
+        .section {
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .section:nth-child(odd) {
+            background-color: #f4f4f4;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        
+        .parallax-layer {
+            position: relative;
+            background-image: url('https://via.placeholder.com/1920x1080/ff0000'); 
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50vh; 
+        }
+
+        
+        .layer1 {
+            z-index: -2;
+        }
+
+        .layer2 {
+            z-index: -1;
+        }
+
+    </style>
+</head>
+<body>
+
+    
+    <div class="parallax layer1"></div>
+
+    
+    <div class="content">
+        <h1>Welcome to the Parallax Scrolling Effect</h1>
+        <p>This is an example of how parallax scrolling works. Scroll down to see the effect!</p>
+    </div>
+
+    
+    <div class="parallax layer2"></div>
+
+    
+    <div class="section">
+        <h2>Section 1</h2>
+        <p>As you scroll down, the background images move at different speeds, creating a 3D effect.</p>
+    </div>
+
+    
+    <div class="section">
+        <h2>Section 2</h2>
+        <p>The parallax effect can be applied to any section, creating an engaging user experience.</p>
+    </div>
+
+    
+    <div class="parallax layer3"></div>
+
+    
+    <div class="section">
+        <h2>Section 3</h2>
+        <p>Continue scrolling to see more sections with different background effects.</p>
+    </div>
+
+    
+    <div class="section">
+        <h2>Footer</h2>
+        <p>© 2025 keerthi sri</p>
+    </div>
+
+</body>
+</html>

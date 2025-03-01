@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        
+        section {
+            width: 100%;
+            padding: 40px 20px;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .section-content div {
+            flex: 1 1 250px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .section-content div h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .section-content div p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            border: 2px solid #fff;
+            padding: 10px 20px;
+            margin-top: 10px;
+            display: inline-block;
+            border-radius: 4px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            section h2 {
+                font-size: 1.8em;
+            }
+
+            .section-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section-content div {
+                flex: 1 1 100%;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+   
+    <div class="container">
+        
+        
+        <header>
+            <h1>My Portfolio</h1>
+            <p>Welcome to my personal portfolio website!</p>
+        </header>
+
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="section-content">
+                <div>
+                    <h3>Who am I?</h3>
+                    <p>I'm a passionate web developer with a strong foundation in HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="section-content">
+                <div>
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript, React, Vue.js</p>
+                </div>
+                <div>
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Express, MongoDB</p>
+                </div>
+                <div>
+                    <h3>Version Control</h3>
+                    <p>Git, GitHub, GitLab</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="section-content">
+                <div>
+                    <h3>Project 1</h3>
+                    <p>A web application built with React and Node.js to manage tasks.</p>
+                </div>
+                <div>
+                    <h3>Project 2</h3>
+                    <p>An e-commerce website built with Vue.js and MongoDB.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me via email or check out my social media profiles:</p>
+            <a href="mailto:kanakalakeerthisri@gmail.com">Email Me</a>
+        </section>
+    </div>
+
+</body>
+</html>

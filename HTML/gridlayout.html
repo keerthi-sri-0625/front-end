@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr; 
+            grid-template-rows: auto 1fr auto; 
+            grid-template-areas:
+                "header header"
+                "left center"
+                "footer footer"; 
+            gap: 20px; 
+            padding: 20px;
+        }
+
+        
+        header {
+            grid-area: header;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        
+        .left {
+            grid-area: left;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        .center {
+            grid-area: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        footer {
+            grid-area: footer;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "center"
+                    "left"
+                    "footer"; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="grid-container">
+        
+        <header>
+            <h1>CSS Grid Layout</h1>
+        </header>
+
+        
+        <div class="left">
+            <h2>Left Column</h2>
+            <p>This is the left column content.</p>
+        </div>
+
+        
+        <div class="center">
+            <h2>Center Column</h2>
+            <p>This is the center column content. It takes up more space than the left column.</p>
+        </div>
+
+        
+        <footer>
+            <p>© 2025 keeerthi sri kanakala</p>
+        </footer>
+    </div>
+
+</body>
+</html>

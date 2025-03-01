@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-200px);
+            }
+        }
+
+        
+        .logo {
+            position: absolute;
+            font-size: 3em;
+            color: #e74c3c;
+            opacity: 0;
+            animation: fadeInMove 3s ease forwards;
+        }
+
+        
+        @keyframes fadeInMove {
+            0% {
+                opacity: 0;
+   
+                transform: translate(-50%, -50%) scale(0.5);
+            }
+            50% {
+                opacity: 0.5;
+                transform: translate(-50%, -50%) scale(1.2);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="ball"></div>
+
+    
+    <div class="logo">My Logo</div>
+
+</body>
+</html>
